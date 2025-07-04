@@ -1,7 +1,154 @@
 <!DOCTYPE html>
-<html>
-<head><title>My First GitHub Page</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex | Robotics Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
-  <h1>Hello world, I'm on GitHub Pages!</h1>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Alex</span></h1>
+            <h2>Robotics Software Developer</h2>
+            <p>Passionate about building autonomous systems, ROS, and embedded robotics.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/profile-pic.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-media">
+                    <video autoplay loop muted>
+                        <source src="assets/project1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-details">
+                    <h3>Autonomous Drone Swarm</h3>
+                    <p>PX4 + MAVLink-based swarm coordination for search & rescue.</p>
+                    <ul class="tech-used">
+                        <li>ROS2</li>
+                        <li>Python</li>
+                        <li>Gazebo</li>
+                    </ul>
+                    <a href="#" class="btn">GitHub Repo</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-media">
+                    <img src="assets/robot-arm.jpg" alt="Robotic Arm">
+                </div>
+                <div class="project-details">
+                    <h3>6-DOF Robotic Arm Control</h3>
+                    <p>Inverse kinematics solver with MoveIt and PyBullet simulation.</p>
+                    <ul class="tech-used">
+                        <li>C++</li>
+                        <li>MoveIt</li>
+                        <li>URDF</li>
+                    </ul>
+                    <a href="#" class="btn">Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-robot"></i> Robotics</h3>
+                <ul>
+                    <li>ROS/ROS2</li>
+                    <li>SLAM (LIDAR/Vision)</li>
+                    <li>Motion Planning</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <ul>
+                    <li>C++ (17/20)</li>
+                    <li>Python (NumPy, OpenCV)</li>
+                    <li>Bash/CMake</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-microchip"></i> Embedded</h3>
+                <ul>
+                    <li>STM32</li>
+                    <li>Raspberry Pi</li>
+                    <li>RTOS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <div class="resume-container">
+            <div class="education">
+                <h3>Education</h3>
+                <div class="item">
+                    <h4>MSc Robotics</h4>
+                    <p>Carnegie Mellon University | 2023</p>
+                </div>
+            </div>
+            <div class="experience">
+                <h3>Experience</h3>
+                <div class="item">
+                    <h4>Robotics Intern</h4>
+                    <p>Boston Dynamics | Summer 2022</p>
+                    <ul>
+                        <li>Improved locomotion control systems</li>
+                        <li>ROS2 migration for Spot SDK</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="assets/resume.pdf" class="btn" download>Download Full Resume (PDF)</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
