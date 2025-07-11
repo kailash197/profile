@@ -232,3 +232,13 @@ nav a:hover::before {
     gap: 0.5rem;
   }
 }
+
+.social-links a {
+  color: #b66e0f; /* Default color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-links a:hover {
+  color: #007bff; /* Blue on hover */
+}
